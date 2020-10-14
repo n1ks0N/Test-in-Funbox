@@ -8,13 +8,13 @@ function App() {
   const info = {
     default: {
       style: {
-        color: '#000',
-        borderColor: '#1698D9',
+        color: "#000",
+        borderColor: "#1698D9",
         backgroundImage: `url(${bg})`,
-        backgroundColor: '#F2F2F2',
+        backgroundColor: "#F2F2F2",
         circle: {
-          background: '#1698D9'
-        },
+          background: "#1698D9"
+        }
       },
       text: {
         appText: {
@@ -22,23 +22,23 @@ function App() {
           span: `купи.`
         },
         upTitle: {
-          text: 'Сказочное заморское яство',
-          color: '#666666'
+          text: "Сказочное заморское яство",
+          color: "#666666"
         },
         text: {
-          color: '#666666'
+          color: "#666666"
         },
-        color: '#FFFFFF'
+        color: "#FFFFFF"
       }
     },
     defaultHover: {
       style: {
-        color: '#000',
-        borderColor: '#2EA8E6',
-        backgroundColor: '#F2F2F2',
+        color: "#000",
+        borderColor: "#2EA8E6",
+        backgroundColor: "#F2F2F2",
         backgroundImage: `url(${bg})`,
         circle: {
-          background: '#2EA8E6'
+          background: "#2EA8E6"
         }
       },
       text: {
@@ -47,134 +47,191 @@ function App() {
           span: `купи.`
         },
         upTitle: {
-          text: 'Сказочное заморское яство',
-          color: '#666666'
+          text: "Сказочное заморское яство",
+          color: "#666666"
         },
         text: {
-          color: '#666666'
+          color: "#666666"
         },
-        color: '#FFFFFF'
+        color: "#FFFFFF"
       }
     },
     selected: {
       style: {
-        color: '#000',
-        borderColor: '#D91667',
-        backgroundColor: '#F2F2F2',
+        color: "#000",
+        borderColor: "#D91667",
+        backgroundColor: "#F2F2F2",
         backgroundImage: `url(${bg})`,
         circle: {
-          background: '#D91667'
+          background: "#D91667"
         }
       },
       text: {
-        appText: [['Печень утки разварная с артишоками.'], 'Головы щучьи с чесноком да свежайшая сёмгушка.', 'Филе из цыплят с трюфелями в бульоне.'],
-        color: '#FFFFFF',
+        appText: [
+          ["Печень утки разварная с артишоками."],
+          "Головы щучьи с чесноком да свежайшая сёмгушка.",
+          "Филе из цыплят с трюфелями в бульоне."
+        ],
+        color: "#FFFFFF",
         upTitle: {
-          text: 'Сказочное заморское яство',
-          color: '#666666'
+          text: "Сказочное заморское яство",
+          color: "#666666"
         },
         text: {
-          color: '#666666'
+          color: "#666666"
         }
       }
     },
     selectedHover: {
       style: {
-        color: '#000',
-        borderColor: '#E62E7A',
-        backgroundColor: '#F2F2F2',
+        color: "#000",
+        borderColor: "#E62E7A",
+        backgroundColor: "#F2F2F2",
         backgroundImage: `url(${bg})`,
         circle: {
-          background: '#E62E7A'
+          background: "#E62E7A"
         }
       },
       text: {
-        appText: ['Печень утки разварная с артишоками.', 'Головы щучьи с чесноком да свежайшая сёмгушка.', 'Филе из цыплят с трюфелями в бульоне.'],
-        color: '#FFFFFF',
+        appText: [
+          "Печень утки разварная с артишоками.",
+          "Головы щучьи с чесноком да свежайшая сёмгушка.",
+          "Филе из цыплят с трюфелями в бульоне."
+        ],
+        color: "#FFFFFF",
         upTitle: {
-          text: 'Котэ не одобряет?',
-          color: '#E62E7A'
+          text: "Котэ не одобряет?",
+          color: "#E62E7A"
         },
         text: {
-          color: '#666666'
+          color: "#666666"
         }
       }
     },
     disabled: {
       style: {
-        color: '#D3D3D3',
-        borderColor: '#B3B3B3',
-        backgroundColor: '#F2F2F2',
+        color: "#D3D3D3",
+        borderColor: "#B3B3B3",
+        backgroundColor: "#F2F2F2",
         backgroundImage: `url(${bgDis})`,
         circle: {
-          background: '#B3B3B3'
+          background: "#B3B3B3"
         },
         text: {
-          color: '#D3D3D3'
+          color: "#D3D3D3"
         }
       },
       text: {
         appText: {
-          first: 'Печалька,',
-          sec: 'закончился.'
+          first: "Печалька,",
+          sec: "закончился."
         },
         upTitle: {
-          text: 'Сказочное заморское яство',
-          color: '#D3D3D3'
+          text: "Сказочное заморское яство",
+          color: "#D3D3D3"
         },
         text: {
-          color: '#666666'
+          color: "#666666"
         },
-        color: '#FFFF66'
+        color: "#FFFF66"
       }
     }
-  }
-
+  };
   const [states, setStates] = useState([
-    { id: 1, state: 0, name: 'с фуа-гра', weight: '0,5', subText: '10 порций мышь в подарок', text: [info.default.text.appText.text, info.default.text.appText.span], info: info.default },
-    { id: 2, state: 0, name: 'с рыбой', weight: '2', subText: '40 порций 2 мыши в подарок', text: [info.default.text.appText.text, info.default.text.appText.span], info: info.default },
-    { id: 3, state: 0, name: 'с курицей', weight: '5', subText: '100 порций 5 мышей в подарок заказчик доволен', text: [info.default.text.appText.text, info.default.text.appText.span], info: info.default }
-  ])
+    {
+      id: 1,
+      state: 0,
+      name: "с фуа-гра",
+      weight: "0,5",
+      subText: "10 порций мышь в подарок",
+      text: [info.default.text.appText.text, info.default.text.appText.span],
+      info: info.default
+    },
+    {
+      id: 2,
+      state: 0,
+      name: "с рыбой",
+      weight: "2",
+      subText: "40 порций 2 мыши в подарок",
+      text: [info.default.text.appText.text, info.default.text.appText.span],
+      info: info.default
+    },
+    {
+      id: 3,
+      state: 0,
+      name: "с курицей",
+      weight: "5",
+      subText: "100 порций 5 мышей в подарок заказчик доволен",
+      text: [info.default.text.appText.text, info.default.text.appText.span],
+      info: info.default
+    }
+  ]);
 
   const mouseEffect = ({ id }) => {
-    setStates(prev => (
-      prev.map(data => {
-        if ((data.id === Number(id)) && (data.state !== 2)) {
+    setStates((prev) =>
+      prev.map((data) => {
+        if (data.id === Number(id) && data.state !== 2) {
           switch (data.state) {
             case 0:
-              return ({ ...data, info: info.defaultHover })
+              return { ...data, info: info.defaultHover };
+
             case 1:
-              return ({ ...data, info: info.selectedHover })
+              return { ...data, info: info.selectedHover };
+
             default:
-              return data
+              return data;
           }
         }
-        return data
+
+        return data;
       })
-    ))
-  }
+    );
+  };
 
   const changeState = ({ id }) => {
-    setStates(prev => (
-      prev.map(data => {
-        if (data.id === Number(id)) { // выборка нужного объекта, из state
-          switch (data.state) { // в switch смена state у карточки
+    setStates((prev) =>
+      prev.map((data) => {
+        if (data.id === Number(id)) {
+          switch (data.state) {
             case 0:
-              return ({ ...data, state: 1, text: info.selected.text.appText[id - 1], info: info.selected })
+              return {
+                ...data,
+                state: 1,
+                text: info.selected.text.appText[id - 1],
+                info: info.selected
+              };
+
             case 1:
-              return ({ ...data, state: 2, text: [info.disabled.text.appText.first, info.disabled.text.appText.sec], info: info.disabled })
+              return {
+                ...data,
+                state: 2,
+                text: [
+                  info.disabled.text.appText.first,
+                  info.disabled.text.appText.sec
+                ],
+                info: info.disabled
+              };
+
             case 2:
-              return ({ ...data, state: 0, text: [info.default.text.appText.text, info.default.text.appText.span], info: info.default })
+              return {
+                ...data,
+                state: 0,
+                text: [
+                  info.default.text.appText.text,
+                  info.default.text.appText.span
+                ],
+                info: info.default
+              };
+
             default:
-              return data
+              return data;
           }
         }
-        return data
-      })
-    ))
-  }
 
-  console.log('render')
+        return data;
+      })
+    );
+  };
 
   return (
     <div className="App">
@@ -189,7 +246,6 @@ function App() {
               <div className="card__circle" style={data.info.style.circle} id={data.id}><p id={data.id}>{data.weight}<br /><span id={data.id}>кг</span></p></div>
             </div>
             <p className="app__text" style={data.info.text} id={data.id}>{data.text.constructor === Array ? (data.state === 0 ? data.text[0] : data.text.join(' ' + data.name + ' ')) : data.text} <span id={data.id} onClick={e => changeState(e.target)}>{data.text[1] === `купи.` ? data.text[1] : null}</span></p>
-            {/* если text является массивом, то объеденить в строку, (в зависимости от state, разная конкатенация); иначе вывести одну строку */}
           </div>
         ))}
       </div>
