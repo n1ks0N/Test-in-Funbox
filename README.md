@@ -1,4 +1,5 @@
-# [WebSite](http://f0477900.xsph.ru/) - http://f0477900.xsph.ru/
+# [WebSite](http://f0477900.xsph.ru/)
+*http://f0477900.xsph.ru/*
 ## Тестовое задание в FunBox.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
